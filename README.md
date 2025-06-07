@@ -1,13 +1,13 @@
-# StudySmart
+# AceAI
 
 ## Overview
-StudySmart is a Progressive Web App (PWA) designed to revolutionize last-minute exam preparation for students. By leveraging adaptive AI technology, StudySmart analyzes uploaded syllabi and previous year question papers (PYQs) to generate personalized study materials, including important questions, key topics, predicted question papers, concise notes, psychological learning techniques, and strategic study plans. The app focuses on maximizing exam performance with minimal effort while reducing stress through tailored psychological support. Real-time feedback ensures continuous improvement, making StudySmart a unique solution for efficient, high-impact studying.
+AceAI is a Progressive Web App (PWA) designed to revolutionize last-minute exam preparation for students. By leveraging adaptive AI technology, AceAI analyzes uploaded syllabi and previous year question papers (PYQs) to generate personalized study materials, including important questions, key topics, predicted question papers, concise notes, psychological learning techniques, and strategic study plans. The app focuses on maximizing exam performance with minimal effort while reducing stress through tailored psychological support. Real-time feedback ensures continuous improvement, making AceAI a unique solution for efficient, high-impact studying.
 
 ## Features
 - **Class & Subject Management**: Create classes, add subjects, and upload syllabi, PYQs, and exam dates for seamless organization.
 - **AI-Driven Study Materials (On-Demand)**:
   - **Important Questions**: Extracts and ranks high-weightage questions from PYQs using pattern recognition.
-  - **Key Topics**: Identifies critical syllabus areas via AI-powered trend analysis.
+  - **Key Topics**: Identifies critical syllabus areas with AI-powered trend analysis.
   - **Predicted Question Paper**: Generates realistic mock exams based on historical data and syllabus trends.
   - **Preparation Notes**: Provides concise, visually engaging summaries with interactive elements (e.g., clickable definitions).
   - **Psychological Techniques**: Offers personalized memory aids (mnemonics, spaced repetition) and stress-reduction strategies (e.g., breathing exercises, affirmations).
@@ -31,19 +31,38 @@ StudySmart is a Progressive Web App (PWA) designed to revolutionize last-minute 
 - Inefficient study methods and exam-related anxiety.
 - Lack of personalized, high-impact study tools in existing platforms.
 
+## Suggested Names
+For potential rebranding, here are shorter, easy-to-spell name alternatives:
+- **Sanskrit-Inspired**:
+  - **VidyAI**: From "Vidya" (knowledge) + "AI," suggesting intelligent learning.
+  - **GyanZap**: From "Gyan" (wisdom) + "Zap," implying fast, insightful studying.
+  - **Shiksha**: Sanskrit for education, simple and elegant.
+  - **Bodhi**: Sanskrit for enlightenment, conveying deep understanding.
+  - **Jnana**: Sanskrit for knowledge, short and meaningful.
+- **Latin-Inspired**:
+  - **StudiAI**: From "studium" (study) + "AI," modern and tech-focused.
+  - **Novus**: Latin for new, suggesting an innovative approach.
+  - **Clarus**: Latin for clear, implying clarity in learning.
+  - **Lumen**: Latin for light, evoking illumination through knowledge.
+  - **Sapio**: From "sapere" (to know), short and intellectual.
+
+*Note*: Check domain availability (e.g., vidyai.app, studi.ai) for branding purposes.
+
 ## Installation
 ### Prerequisites
-- Node.js (v16 or higher)
-- Python (v3.8 or higher)
-- MongoDB
-- AWS or Firebase account for hosting
-- Git for version control
+- Node.js (v16 or higher, free to download)
+- Python (v3.8 or higher, free)
+- MongoDB Atlas account (free tier, no credit card required)
+- Git for version control (free)
+- Vercel account for frontend hosting (free tier)
+- Render account for backend hosting (free tier)
+- Google Colab account for AI model development (free)
 
 ### Steps
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/studysmart/studysmart.git
-   cd studysmart
+   git clone https://github.com/aceai/aceai.git
+   cd aceai
    ```
 2. **Install Frontend Dependencies**:
    ```bash
@@ -54,27 +73,37 @@ StudySmart is a Progressive Web App (PWA) designed to revolutionize last-minute 
    ```bash
    cd ../backend
    npm install
-   pip install -r requirements.txt
+   pip install fastapi uvicorn python-multipart pymongo pdfplumber tesseract
    ```
-4. **Set Up Environment Variables**:
-   Create a `.env` file in the `backend` directory with the following:
-   ```
-   MONGODB_URI=<your-mongodb-uri>
-   AWS_ACCESS_KEY=<your-aws-access-key>
-   AWS_SECRET_KEY=<your-aws-secret-key>
-   ```
-5. **Run the Application**:
-   - Start the backend:
+4. **Set Up MongoDB Atlas**:
+   - Create a free MongoDB Atlas account at [mongodb.com](https://www.mongodb.com).
+   - Set up a cluster (free tier, 512 MB) and obtain the connection URI.
+   - Create a `.env` file in the `backend` directory:
+     ```
+     MONGODB_URI=<your-mongodb-atlas-uri>
+     ```
+5. **Set Up AI Models**:
+   - Use Google Colab to develop and test NLP models (e.g., Hugging Face’s BERT) for syllabus/PYQ analysis.
+   - Download pretrained models and run locally or via Colab’s free GPU support.
+6. **Run the Application Locally**:
+   - Start the backend (FastAPI):
      ```bash
      cd backend
-     npm start
+     uvicorn main:app --reload
      ```
    - Start the frontend:
      ```bash
      cd frontend
      npm start
      ```
-6. **Access the PWA**: Open `http://localhost:3000` in a browser.
+7. **Deploy the Application**:
+   - **Frontend (Vercel)**:
+     - Push the `frontend` folder to a GitHub repository.
+     - Connect to Vercel, import the repository, and deploy using the free tier.
+   - **Backend (Render)**:
+     - Push the `backend` folder to a GitHub repository.
+     - Connect to Render, set up a web service, and deploy using the free tier.
+   - Access the PWA via the Vercel-provided URL (e.g., `https://aceai.vercel.app`).
 
 ## Usage
 1. **Sign Up**: Create an account or log in via the PWA.
@@ -111,20 +140,22 @@ StudySmart is a Progressive Web App (PWA) designed to revolutionize last-minute 
 - **Metrics & Analytics**: Track website traffic, conversion rates, engagement, and retention.
 
 ## Key Marketing Messages
-- "Save Time, Reduce Stress, Ace Your Exams with StudySmart"
+- "Save Time, Reduce Stress, Ace Your Exams with AceAI"
 - "Personalized Study Plans Tailored to Your Learning Style"
 - "Unlock Your Potential with AI-Powered Insights"
 - "Join Thousands of Students Who’ve Improved Their Grades"
 
 ## Technology Stack
-- **Frontend**: React.js with Tailwind CSS for a responsive PWA.
-- **Backend**: Node.js/Express for APIs; Python for AI/ML (NLP for syllabus/PYQ analysis).
-- **Database**: MongoDB for scalable storage.
-- **File Processing**: PDF.js for PDFs; OCR (Tesseract) for scanned documents.
-- **Hosting**: AWS for scalability; Firebase for real-time features.
+- **Frontend**: React.js with Tailwind CSS for a responsive PWA (open-source, free).
+- **Backend**: Node.js/Express for APIs; FastAPI (Python) for AI/ML tasks (open-source, free).
+- **Database**: MongoDB Atlas (free tier with 512 MB storage).
+- **File Processing**: PDF.js for PDFs (open-source); Tesseract OCR for scanned documents (open-source).
+- **AI/ML**: Hugging Face open-source NLP models (e.g., BERT) run locally or on Google Colab (free tier).
+- **Hosting**: Vercel for frontend and Render for backend (both free tiers).
+- **Version Control**: GitHub for code management (free).
 
 ## Contributing
-We welcome contributions to StudySmart! To contribute:
+We welcome contributions to AceAI! To contribute:
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature/your-feature`).
 3. Commit your changes (`git commit -m "Add your feature"`).
@@ -135,6 +166,3 @@ Please follow our [Code of Conduct](CODE_OF_CONDUCT.md) and ensure your code adh
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-For inquiries, reach out to the StudySmart team at [support@studysmart.app](mailto:support@studysmart.app) or join our community on [X](https://x.com/studysmart).
