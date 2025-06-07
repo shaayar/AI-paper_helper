@@ -114,3 +114,61 @@
 - "Personalized Study Plans Tailored to Your Learning Style"
 - "Unlock Your Potential with AI-Powered Insights"
 - "Join Thousands of Students Who’ve Improved Their Grades"
+
+## 13. Sitemap
+AceAI Sitemap
+├── Home
+│   ├── Welcome Section (Overview, key features)
+│   ├── Call-to-Action (Sign Up / Log In)
+│   └── Quick Start Guide
+├── Sign Up
+│   ├── Email/Password Registration
+│   ├── Social Login (Google, optional)
+│   └── Terms & Privacy Links
+├── Log In
+│   ├── Email/Password Login
+│   ├── Social Login (Google, optional)
+│   └── Forgot Password
+├── Dashboard (Authenticated Users)
+│   ├── Overview (Classes, upcoming exams)
+│   ├── Create Class
+│   │   ├── Add Subject
+│   │   ├── Upload Syllabus (PDF/Image)
+│   │   ├── Upload PYQs (PDF/Image)
+│   │   └── Set Exam Date
+│   ├── Class List
+│   │   ├── View/Edit Class
+│   │   ├── View/Edit Subjects
+│   │   └── Delete Class/Subject
+│   └── Study Materials
+│       ├── Generate Materials
+│       │   ├── Important Questions
+│       │   ├── Key Topics
+│       │   ├── Predicted Question Paper
+│       │   ├── Preparation Notes
+│       │   ├── Psychological Techniques
+│       │   └── Study Strategy
+│       ├── View Generated Materials
+│       └── Download Materials
+├── Interactive Tools
+│   ├── Quizzes (Auto-generated from PYQs)
+│   ├── Flashcards (Key concepts)
+│   └── Progress Tracker (Study goals)
+├── Settings
+│   ├── Profile (Edit name, email, preferences)
+│   ├── Subscription (View/Upgrade plan)
+│   ├── Notifications (Email/push settings)
+│   └── Log Out
+├── About
+│   ├── Mission & Vision
+│   ├── Team
+│   └── Contact (Email, X link)
+├── Pricing
+│   ├── Free Tier Details
+│   ├── Tiered Plans (Basic: $5/mo, Standard: $8/mo, Premium: $10/mo)
+│   ├── Pay-Per-Use Options
+│   └── Institutional Licensing Info
+└── Help
+    ├── FAQ
+        ├── User Guide
+            └── Support (Contact form, email)
