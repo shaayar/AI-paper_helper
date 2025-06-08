@@ -10,7 +10,7 @@ AceAI is a Progressive Web App (PWA) designed to revolutionize last-minute exam 
   - **Key Topics**: Identifies critical syllabus areas with AI-powered trend analysis.
   - **Predicted Question Paper**: Generates realistic mock exams based on historical data and syllabus trends.
   - **Preparation Notes**: Provides concise, visually engaging summaries with interactive elements (e.g., clickable definitions).
-  - **Psychological Techniques**: Offers personalized memory aids (mnemonics, spaced repetition) and stress-reduction strategies (e.g., breathing exercises, affirmations).
+  - **Psychological Techniques**: Offers personalized memory aids (mnemonics, spaced repetition), techniques like Pomodoro, Eat the Biggest frog first, etc. and stress-reduction strategies (e.g., breathing exercises, affirmations).
   - **Study Strategy**: Delivers dynamic, prioritized study plans that adapt based on user progress.
 - **Interactive Features**: Quizzes, flashcards, and progress trackers to boost engagement and retention.
 - **LMS Integration**: Connects with platforms like Canvas and Blackboard for seamless data syncing.
@@ -30,23 +30,6 @@ AceAI is a Progressive Web App (PWA) designed to revolutionize last-minute exam 
 - Overwhelming syllabi and lack of focus during last-minute preparation.
 - Inefficient study methods and exam-related anxiety.
 - Lack of personalized, high-impact study tools in existing platforms.
-
-## Suggested Names
-For potential rebranding, here are shorter, easy-to-spell name alternatives:
-- **Sanskrit-Inspired**:
-  - **VidyAI**: From "Vidya" (knowledge) + "AI," suggesting intelligent learning.
-  - **GyanZap**: From "Gyan" (wisdom) + "Zap," implying fast, insightful studying.
-  - **Shiksha**: Sanskrit for education, simple and elegant.
-  - **Bodhi**: Sanskrit for enlightenment, conveying deep understanding.
-  - **Jnana**: Sanskrit for knowledge, short and meaningful.
-- **Latin-Inspired**:
-  - **StudiAI**: From "studium" (study) + "AI," modern and tech-focused.
-  - **Novus**: Latin for new, suggesting an innovative approach.
-  - **Clarus**: Latin for clear, implying clarity in learning.
-  - **Lumen**: Latin for light, evoking illumination through knowledge.
-  - **Sapio**: From "sapere" (to know), short and intellectual.
-
-*Note*: Check domain availability (e.g., vidyai.app, studi.ai) for branding purposes.
 
 ## Installation
 ### Prerequisites
@@ -153,14 +136,6 @@ For potential rebranding, here are shorter, easy-to-spell name alternatives:
 - **AI/ML**: Hugging Face open-source NLP models (e.g., BERT) run locally or on Google Colab (free tier).
 - **Hosting**: Vercel for frontend and Render for backend (both free tiers).
 - **Version Control**: GitHub for code management (free).
-
-## Contributing
-We welcome contributions to AceAI! To contribute:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature`).
-3. Commit your changes (`git commit -m "Add your feature"`).
-4. Push to the branch (`git push origin feature/your-feature`).
-5. Open a pull request with a detailed description of your changes.
 
 Please follow our [Code of Conduct](CODE_OF_CONDUCT.md) and ensure your code adheres to our coding standards.
 
